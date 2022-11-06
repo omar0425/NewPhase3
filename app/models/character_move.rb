@@ -1,5 +1,5 @@
-class Character_Move < ActiveRecord::Base
-belongs_to :move
+class CharacterMove < ActiveRecord::Base
+belongs_to :karate_move
 belongs_to :character
 
 end
