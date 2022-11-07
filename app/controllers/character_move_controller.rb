@@ -1,0 +1,6 @@
+class CharacterMoveController < ApplicationController
+
+
+
+
+end

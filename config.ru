@@ -12,4 +12,10 @@ end
 use Rack::JSONBodyParser
 
 # Our application
+use CharacterController
+use KarateMoveController
+use DojoController
+use CharacterMoveController
 run ApplicationController
+
+
