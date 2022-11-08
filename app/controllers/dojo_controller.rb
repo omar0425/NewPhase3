@@ -1,4 +1,10 @@
 class DojoController < ApplicationController
 
- 
+
+
+
+
+
+
+
 end

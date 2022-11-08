@@ -1,6 +1,0 @@
-class KarateMoveController < ApplicationController
-
-
-
-
-end

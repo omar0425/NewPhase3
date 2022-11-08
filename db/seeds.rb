@@ -1,21 +1,8 @@
 puts "🥋Chopping Data..."
 
 # Seed your database here
-###Karate Moves#################################################
-k1 = KarateMove.create(moves:"The Straight Punch: Choku Zuki")
-k2 = KarateMove.create(moves:"The Front Lunch Punch: Oi Zuki")
-k3 = KarateMove.create(moves:"The Front Kick: Mae Geri")
-k4 = KarateMove.create(moves:"The Side Kick: Yoko Geri")
-k5 = KarateMove.create(moves:"The Roundhouse Kick: Mawashi Geri")
-k6 = KarateMove.create(moves:"Upper Rising Block: Age Uke")
-k7 = KarateMove.create(moves:"Middle Block: Soto Uke/Uchi Uke")
-k8 = KarateMove.create(moves:"Downward Block: Gedan Barai")
-###Karate Moves##################################################
-#Dojos########################################
-dojo1 = Dojo.create(name:"Eagle Fang Karate")
-dojo2 = Dojo.create(name:"Cobra Kai Dojo")
-dojo3 = Dojo.create(name:"Miyagi-Do Karate")
-#Dojos########################################
+
+
 ###Characters#########################################################
 c1 = Character.create(
   name: "Johnny Lawrence",
@@ -78,7 +65,16 @@ c12 = Character.create(
   image_url: "https://static.wikia.nocookie.net/thekaratekid/images/c/cd/CK_Silver_Infobox.jpg",
   )
 ###Characters#########################################################
-cm1 = CharacterMove.create(character_id: c1.id, karate_move_id: k2.id)
+
+
+#Dojos########################################
+dojo1 = Dojo.create(name:"Eagle Fang Karate")
+dojo2 = Dojo.create(name:"Cobra Kai Dojo")
+dojo3 = Dojo.create(name:"Miyagi-Do Karate")
+#Dojos########################################
+
+
+
 
                         puts " 🪓Done Chopping!"
                         

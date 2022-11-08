@@ -10,14 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_11_06_134815) do
-
-  create_table "character_moves", force: :cascade do |t|
-    t.integer "character_id"
-    t.integer "karate_move_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
+ActiveRecord::Schema.define(version: 2022_11_06_134432) do
 
   create_table "characters", force: :cascade do |t|
     t.string "name"
@@ -30,12 +23,6 @@ ActiveRecord::Schema.define(version: 2022_11_06_134815) do
 
   create_table "dojos", force: :cascade do |t|
     t.string "name"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "karate_moves", force: :cascade do |t|
-    t.string "moves"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
