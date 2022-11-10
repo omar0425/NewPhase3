@@ -21,6 +21,11 @@ class CharacterController < ApplicationController
       )
       character.to_json
     end
+    delete "/character/:id"do
+    character = Character.find(params[:id])
+    character.destroy
+    character.to_json
+  end
   end
   
 
