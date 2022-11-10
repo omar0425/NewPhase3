@@ -12,6 +12,16 @@ class CharacterController < ApplicationController
       )
     character.to_json
   end
+
+    post "/character" do
+      character = Character.create(
+        name: params[:name],
+        portrayed_by: params[:portrayed_by],
+        image_url: params[:image_url]
+      )
+      character.to_json
+    end
+  end
   
 
 
@@ -19,4 +29,3 @@ class CharacterController < ApplicationController
 
 
 
-end
